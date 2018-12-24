@@ -5,7 +5,7 @@
 http://processingdaydenver.org
 
 GH Pages URL:
-* https://cacheflowe.github.io/pcd-denver-web/
+* https://pcddenver.github.io/
 
 Shoelace css framework:
 * https://shoelace.style/docs/content.html
