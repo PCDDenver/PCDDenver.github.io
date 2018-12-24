@@ -1,5 +1,7 @@
 :root {
-  --buttonStripe1: #B70008;
+  --purple: #7621bf;
+  --green: #37a06b;
+  --bodycopy: #222222;
   --buttonStripe2: #CA2127;
   --button-text-color: #ffffff;
   --fade-anim:                           transform 0s linear 0.35s, visibility 0s linear 0.35s, opacity 0.35s linear;
@@ -18,10 +20,10 @@
 
 body {
   transition: opacity 0.5s linear;
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 1.3rem;
-  line-height: 1.3;
-  color: #000;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  font-size: 1.4rem;
+  /* line-height: 1.3; */
+  color: var(--bodycopy);
   width: 100vw;
   height: 100vh;
   font-weight: normal;
@@ -32,9 +34,64 @@ body.ready {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'Roboto Slab', serif;
+  margin-bottom: 1.5rem;
+  color: var(--purple);
+}
+
+h1 {
+  padding: 3rem 0 2rem 102px;
+  background-image: url(../images/pcd-logo.png);
+  background-size: 90px;
+  background-repeat: no-repeat;
+  background-position: 0px 1.5rem;
 }
 
 .shadow {
   filter: drop-shadow( 0 0.1rem 0.6rem rgba(0,0,0,1.0) );
+}
+
+a, a:active, a:hover a:visited {
+  color: var(--purple);
+  text-decoration: underline;
+  transition: color 0.2s linear;
+}
+a:hover {
+  color: var(--green);
+}
+
+/* Content container */
+
+#content {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 2rem;
+}
+
+#content > * {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+#content h2 {
+  padding-top: 1.5rem;
+}
+
+/* Schedule */
+
+.schedule-item {
+}
+
+.schedule-item .time {
+  color: var(--green);
+}
+
+.schedule-item .title {
+  color: var(--purple);
+}
+
+.schedule-item .info {
+  font-size: 1rem;
+}
+.schedule-item .title .info {
+  color: var(--bodycopy);
 }
